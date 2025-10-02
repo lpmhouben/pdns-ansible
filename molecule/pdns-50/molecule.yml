@@ -134,7 +134,7 @@ verifier:
   directory: ../resources/tests/all
   additional_files_or_dirs:
     # path relative to 'directory'
-    - ../repo-48/
+    - ../repo-50/
     - ../backend-sqlite/
     - ../backend-mysql/
     - ../systemd-override/
