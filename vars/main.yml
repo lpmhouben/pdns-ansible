@@ -2,7 +2,7 @@
 
 pdns_auth_powerdns_repo_master:
   apt_repo_origin: "repo.powerdns.com"
-  apt_version: "powerdns-auth-master"
+  apt_version: "auth-master"
   gpg_key_url: http://repo.powerdns.com/CBC8B383-pub.asc
   gpg_key_id: "D47975F8DAE32700A563E64FFF389421CBC8B383"
   gpg_key_file: powerdns-auth-master-pub.asc
@@ -12,7 +12,7 @@ pdns_auth_powerdns_repo_master:
 
 pdns_auth_powerdns_repo_48:
   apt_repo_origin: "repo.powerdns.com"
-  apt_version: "powerdns-auth-48"
+  apt_version: "auth-48"
   gpg_key_url: http://repo.powerdns.com/FD380FBB-pub.asc
   gpg_key_id: "9FAAA5577E8FCF62093D036C1B0C6205FD380FBB"
   gpg_key_file: powerdns-auth-48-pub.asc
@@ -22,7 +22,7 @@ pdns_auth_powerdns_repo_48:
 
 pdns_auth_powerdns_repo_49:
   apt_repo_origin: "repo.powerdns.com"
-  apt_version: "powerdns-auth-49"
+  apt_version: "auth-49"
   gpg_key_url: http://repo.powerdns.com/FD380FBB-pub.asc
   gpg_key_id: "9FAAA5577E8FCF62093D036C1B0C6205FD380FBB"
   gpg_key_file: powerdns-auth-49-pub.asc
@@ -32,7 +32,7 @@ pdns_auth_powerdns_repo_49:
 
 pdns_auth_powerdns_repo_50:
   apt_repo_origin: "repo.powerdns.com"
-  apt_version: "powerdns-auth-50"
+  apt_version: "auth-50"
   gpg_key_url: http://repo.powerdns.com/FD380FBB-pub.asc
   gpg_key_id: "9FAAA5577E8FCF62093D036C1B0C6205FD380FBB"
   gpg_key_file: powerdns-auth-50-pub.asc
