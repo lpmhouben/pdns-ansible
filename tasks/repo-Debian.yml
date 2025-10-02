@@ -12,19 +12,19 @@
     group: root
     mode: '0755'
 
-- name: Download the dnsdist APT Repository key
+- name: Download the PDNS auth APT Repository key
   ansible.builtin.get_url:
-    url: "{{ dnsdist_install_repo['gpg_key_url'] }}"
-    dest: "/etc/apt/keyrings/{{ dnsdist_install_repo['gpg_key_file'] }}"
+    url: "{{ pdns_auth_install_repo['gpg_key_url'] }}"
+    dest: "/etc/apt/keyrings/{{ pdns_auth_install_repo['gpg_key_file'] }}"
     owner: root
     group: root
     mode: '0644'
   notify: Update the APT cache
 
-- name: Create the dnsdist APT repository Deb822 source
+- name: Create the PDNS auth APT repository Deb822 source
   ansible.builtin.template:
-    src: 'dnsdist.sources.j2'
-    dest: "/etc/apt/sources.list.d/{{ dnsdist_install_repo['name'] }}.sources"
+    src: 'pdns-auth.sources.j2'
+    dest: "/etc/apt/sources.list.d/{{ pdns_auth_install_repo['name'] }}.sources"
     owner: root
     group: root
     mode: '0644'
