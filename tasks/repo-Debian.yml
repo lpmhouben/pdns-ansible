@@ -39,4 +39,4 @@
     dest: /etc/apt/preferences.d/pdns
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
