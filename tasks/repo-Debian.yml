@@ -30,6 +30,16 @@
     mode: '0644'
   notify: Update the APT cache
 
+- name: Create deb822 repo for PDNS auth
+  ansible.builtin.deb822_repository:
+    name: "{{ pdns_install_repo['name'] }}"
+    components: main
+    types: deb
+    uris: "https://{{ pdns_install_repo['apt_repo_origin'] }}/{{ ansible_distribution | lower }}/"
+    suites: "{{ ansible_distribution_release | lower }}-{{ pdns_install_repo['apt_version'] }}"
+    signed_by: "/etc/apt/keyrings/{{ pdns_install_repo['gpg_key_file'] }}"
+  notify: Update the APT cache
+
 - name: Flush handlers
   ansible.builtin.meta: flush_handlers
 
